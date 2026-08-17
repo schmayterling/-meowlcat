@@ -13,8 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "stretched cat",
-  description: "a cat stretched to fill the viewport",
+  openGraph: {
+    images: [{ url: "/cat.png", width: 1600, height: 900, alt: "cat" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/cat.png"],
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
